@@ -1,0 +1,156 @@
+*{
+    font-family: 'Roboto';
+}
+
+header {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo {
+
+    height: 3rem;
+    padding-right: 1rem;
+}
+
+
+.menu {
+
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    padding-right: 6rem;
+    gap: 3rem;
+}
+
+.banner {
+    background-color:#1E1E1E;
+    display: flex;
+    height: 40rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.banner div {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    padding-left: 2.5rem;
+    width: 80%;
+    text-align: center;
+
+
+}
+
+.banner img {
+
+    justify-content: flex-end;
+    height: 60%;
+    padding-left: 1.5rem;
+}
+
+@media only screen and (max-width: 667px){
+
+    .banner img {
+
+       height: 30%;
+
+    }
+
+    .banner div {
+
+        padding-left: 0;
+    }
+
+    .us li {
+        text-align: center;
+        max-width: 100%; /* Limita el ancho */
+        max-height: 100%; /* Limita la altura */
+        margin-right: 1rem;
+    }
+
+    .us li p {
+        font-size: 0.85rem; /* Reduce el tamaño del texto si es necesario */
+        word-wrap: break-word; /* Permite que las palabras largas se rompan */
+        overflow-wrap: break-word;
+    }
+
+    header p {
+
+        display: none;
+    }
+
+    .menu {
+        gap: 1rem;
+    }
+}
+
+.us {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: #1E1E1E;
+
+}
+
+.us ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+    font-weight: bold;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.us li {
+    flex: 1;
+    height: 16rem;
+    background-color: yellow;
+    color: black;
+    font-size: 1.4rem;
+    border-radius: 0.7rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.us h2 {
+
+    font-size: 3rem;
+}
+
+.p {
+    font-size: 1.5rem;
+}
+
+.item-1 {
+
+    padding-top: 2rem;
+}
+
+
+.item-2{
+
+    margin-top: 4rem;
+}
+
+footer {
+
+    text-align: center;
+    height: 4rem;
+    background-color: white;
+    padding-top: 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
